@@ -18,8 +18,9 @@ NetKeibaのデータベースから過去レースデータ、馬成績、馬血
 
 そのため、お試しとして使う場合は、ファイルを実行しなくともpickleデータを使えば前へ進むことはできます。（Trainデータを変化させたい場合はパラメタを変えて使用してください)
 
-### `DataProcess.ipynb`
+### `keiba.ipynb`
 
+### 前処理
 スクレイピングしたデータの前処理と加工を行っています。
 またクラスの中にscrapするメソッドも含まれていますが、上記スクレイピング用のipynbで取得したpickleファイルをそのまま使うこともできます。
 
@@ -43,3 +44,5 @@ NetKeibaのデータベースから過去レースデータ、馬成績、馬血
 |Results.process_categorical() | |	カテゴリ変数の処理	ShutubaTable.process_categorical() |
 | ↓	| |	↓ |
 | Results.data_c	| |	ShutubaTable.data_c |
+
+### モデル作成

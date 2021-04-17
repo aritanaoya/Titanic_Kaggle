@@ -27,19 +27,17 @@ NetKeibaのデータベースから過去レースデータ、馬成績、馬血
 | Results.data |	|	ShutubaTable.data |
 | ↓	| |	↓ |
 |Results.preprocessing() | 前処理 | ShutubaTable.preprocessing() |
-
-
-↓		↓
-Results.data_p		ShutubaTable.data_p
-↓		↓
-Results.merge_horse_results()	馬の過去成績データ追加	ShutubaTable.merge_horse_results()
-↓		↓
-Results.data_h		ShutubaTable.data_h
-↓		↓
-Results.merge_peds()	血統データ追加	ShutubaTable.merge_peds()
-↓		↓
-Results.data_pe		ShutubaTable.data_pe
-↓		↓
-Results.process_categorical()	カテゴリ変数の処理	ShutubaTable.process_categorical()
-↓		↓
-Results.data_c		ShutubaTable.data_c
+| ↓	| |	↓ |
+|Results.data_p	| |	ShutubaTable.data_p |
+| ↓	| |	↓ |
+|Results.merge_horse_results() | 馬の過去成績データ追加 | ShutubaTable.merge_horse_results() |
+| ↓	| |	↓ |
+|Results.data_h	| |	ShutubaTable.data_h |
+| ↓	| |	↓ |
+|Results.merge_peds() |	血統データ追加	| ShutubaTable.merge_peds() |
+| ↓	| |	↓ |
+|Results.data_pe | | ShutubaTable.data_pe |
+| ↓	| |	↓ |
+|Results.process_categorical() | |	カテゴリ変数の処理	ShutubaTable.process_categorical() |
+| ↓	| |	↓ |
+| Results.data_c	| |	ShutubaTable.data_c |

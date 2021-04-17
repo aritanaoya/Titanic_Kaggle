@@ -8,9 +8,9 @@ zenn url
 * https://zenn.dev/dijzpeb/books/848d4d8e47001193f3fb/viewer
 
 ## 仕様方法
-'''
-scraping.ipynb
-'''
+
+> scraping.ipynb
+
 スクレイピング用のプログラムです。
 NetKeibaのデータベースから過去レースデータ、馬成績、馬血統、オッズデータを取得しています。
 

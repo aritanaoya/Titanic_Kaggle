@@ -24,27 +24,5 @@ NetKeibaのデータベースから過去レースデータ、馬成績、馬血
 スクレイピングしたデータの前処理と加工を行っています。
 またクラスの中にscrapするメソッドも含まれていますが、上記スクレイピング用のipynbで取得したpickleファイルをそのまま使うこともできます。
 
-
-| 過去レースデータ（訓練データ）|	加工内容	| 出馬表データ |
-| ---- | ---- | ---- |
-| Results.data |	|	ShutubaTable.data |
-| ↓	| |	↓ |
-|Results.preprocessing() | 前処理 | ShutubaTable.preprocessing() |
-| ↓	| |	↓ |
-|Results.data_p	| |	ShutubaTable.data_p |
-| ↓	| |	↓ |
-|Results.merge_horse_results() | 馬の過去成績データ追加 | ShutubaTable.merge_horse_results() |
-| ↓	| |	↓ |
-|Results.data_h	| |	ShutubaTable.data_h |
-| ↓	| |	↓ |
-|Results.merge_peds() |	血統データ追加	| ShutubaTable.merge_peds() |
-| ↓	| |	↓ |
-|Results.data_pe | | ShutubaTable.data_pe |
-| ↓	| |	↓ |
-|Results.process_categorical() | |	カテゴリ変数の処理	ShutubaTable.process_categorical() |
-| ↓	| |	↓ |
-| Results.data_c	| |	ShutubaTable.data_c |
-
-前処理後に_p、馬の過去成績データ追加後に_h、血統データ追加後に_pe、カテゴリ変数処理後に_cという添え字がついてそれぞれのクラス変数として格納されています。
-
 ### モデル作成
+LightGBMとXGBMとTabNetによる学習

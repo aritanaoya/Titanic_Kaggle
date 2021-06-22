@@ -23,6 +23,9 @@ NetKeibaのデータベースから過去レースデータ、馬成績、馬血
 上記スクレイピング用のpythonファイル
 レースが行われるごとにデータをupdateする処理も追記
 
+実行例
+` python scrape_keibadata.py --year 2021 --place 05 `
+
 ### `keibaAI.ipynb`
 
 ### 前処理
